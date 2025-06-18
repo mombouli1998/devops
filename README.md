@@ -1,5 +1,4 @@
-# devops
-# student_list
+# devops : student_list
 
 Ce projet est une preuve de concept (POC) pour démontrer l'utilisation de Docker dans le déploiement d'une application composée d'une API Flask et d'une interface web PHP.
 
