@@ -1,18 +1,36 @@
-# devops : student_list
+# 🐳 Student List - Déploiement Dockerisé
 
-Ce projet est une preuve de concept (POC) pour démontrer l'utilisation de Docker dans le déploiement d'une application composée d'une API Flask et d'une interface web PHP.
+Projet de preuve de concept (**POC**) pour démontrer les capacités de **Docker** à découpler, automatiser et rendre évolutive une infrastructure existante. Ce projet est réalisé pour le département **innovation** de **PO-OS**, une entreprise française spécialisée dans le développement de logiciels pour les lycées.
 
-## 🧱 Structure du projet
+---
 
-- `Dockerfile` – Construction de l'image pour l'API Flask.
-- `docker-compose.yml` – Orchestration des services (API + site web).
-- `requirements.txt` – Dépendances Python pour l'API.
-- `student_age.py` – API Flask qui renvoie une liste d'étudiants.
-- `student-age.json` – Fichier JSON des données étudiantes.
-- `index.php` – Interface web PHP consommant l'API.
+## 🎯 Objectifs pédagogiques
 
-## 🚀 Déploiement
+- Déployer une application existante dans des conteneurs séparés.
+- Automatiser le déploiement via `docker-compose`.
+- Suivre les bonnes pratiques Docker et sécurité.
+- Mettre en place une base d’**Infrastructure as Code**.
+- Stocker les images dans un registre privé Docker.
 
-Lancement de l'infrastructure :
-```bash
-docker-compose up --build
+---
+
+## 🧱 Architecture du projet
+
+| Composant | Description |
+|----------|-------------|
+| **API Flask** | Fournit une liste d'étudiants à partir d’un fichier JSON avec authentification basique |
+| **Frontend PHP** | Interface web HTML/PHP interrogeant l’API pour afficher la liste |
+
+---
+
+## 📁 Arborescence
+
+├── api/
+│ ├── Dockerfile
+│ ├── requirements.txt
+│ ├── student_age.py
+│ ├── student-age.json
+├── website/
+│ └── index.php
+├── docker-compose.yml
+├── README.md
