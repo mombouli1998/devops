@@ -28,10 +28,17 @@ Projet de preuve de concept (**POC**) pour démontrer les capacités de **Docker
 ├── api/
 
 │ ├── Dockerfile
+
 │ ├── requirements.txt
+
 │ ├── student_age.py
+
 │ ├── student-age.json
+
 ├── website/
+
 │ └── index.php
+
 ├── docker-compose.yml
+
 ├── README.md
